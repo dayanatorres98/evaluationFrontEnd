@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+  padding: 40px 30px;
+  max-width: 100% !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-card {
+  display: flex;
+  align-items: start;
+  width: 45%;
+  margin: 2.5%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-card img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.user-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+.btn-selector{
+  position: absolute;
+  left: 87%;
+  top: 50%;
+  
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: #c8d5ee;
+  min-height: 40vh;
   flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5%;
+}
+.inputBuscar{
+  width: 50% !important ;
+}
+.searchBar{
+  display: block;
+  width: 100%; 
+  margin: 1%;
+}
+table{
+  min-width: 500px;
+  top: 40px;
+}
+.containerInput{
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+  position: block;
+}
+.pagination-nav{
+  display: flex;
+  justify-content:center;
+
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 988px){
+  
+  .inputBuscar{
+    width: 100% !important;
+  }
+
+  .App{
+    padding: 40px 5px;
+  }
+  .fila-doble {
+    width: 50%;
+  }
+  .containerInput{
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
 }
